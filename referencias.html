@@ -12,10 +12,11 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/jquery.dataTables.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
-
+  
 </head>
 
 <body>
@@ -47,7 +48,117 @@
   </nav>
   <!-- Page Content -->
   <div class="container">
-
+      <br/>
+    <table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Telefono</th>
+                <th>Correo</th>
+                <th>Parentesco</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mario Rene Marroquin De Leon</td>
+                <td>59781679</td>
+                <td>nobrinda@gmail.com</td>
+                <td>Padre</td>
+            </tr>
+            <tr>
+                <td>Gladis Yanet Hernandez Aquino</td>
+                <td>24427040</td>
+                <td>nobrinda@gmail.com</td>
+                <td>Madre</td>
+            </tr>
+            <tr>
+                <td>Alvaro Rene Marroquin Hernandez</td>
+                <td>1234-5678</td>
+                <td>nobrinda@gmail.com</td>
+                <td>Hermano</td>
+            </tr>
+            <tr>
+                <td>Brayan Villalte</td>
+                <td>5070-6364</td>
+                <td>nobrinda@gmail.com</td>
+                <td>Amigo</td>
+            </tr>
+            <tr>
+                <td>Byron Montenegro</td>
+                <td>3001-7222</td>
+                <td>nobrinda@gmail.com</td>
+                <td>Amigo</td>
+            </tr>
+            <tr>
+                <td>Cristopher Guandalini</td>
+                <td>5915-7390</td>
+                <td>nobrinda@gmail.com</td>
+                <td>Amigo</td>
+            </tr>
+            <tr>
+                <td>Xavier Lima</td>
+                <td>5482-3155</td>
+                <td>nobrinda@gmail.com</td>
+                <td>Amigo</td>
+            </tr>
+            <tr>
+                <td>Sofia Hernandez</td>
+                <td>3401-7996</td>
+                <td>nobrinda@gmail.com</td>
+                <td>Amiga</td>
+            </tr>
+            <tr>
+                <td>Sebastian Leiva</td>
+                <td>5829-1769</td>
+                <td>nobrinda@gmail.com</td>
+                <td>Amigo</td>
+            </tr>
+            <tr>
+                <td>Luis Martinez</td>
+                <td>4207-9086</td>
+                <td>nobrinda@gmail.com</td>
+                <td>Amigo</td>
+            </tr>
+            <tr>
+                <td>Luis Rizo</td>
+                <td>4124-9375</td>
+                <td>nobrinda@gmail.com</td>
+                <td>Amigo</td>
+            </tr>
+            <tr>
+                <td>Josue Hernandez</td>
+                <td>5856-9938</td>
+                <td>nobrinda@gmail.com</td>
+                <td>Amigo</td>
+            </tr>
+            <tr>
+                <td>Heicell Guarcas</td>
+                <td>5717-0107</td>
+                <td>nobrinda@gmail.com</td>
+                <td>Amiga</td>
+            </tr>
+            <tr>
+                <td>Luis Rizo</td>
+                <td>4124-9375</td>
+                <td>nobrinda@gmail.com</td>
+                <td>Amigo</td>
+            </tr>
+            <tr>
+                <td>Eddy Barrios</td>
+                <td>4711-4458</td>
+                <td>nobrinda@gmail.com</td>
+                <td>Amigo</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Nombre</th>
+                <th>Telefono</th>
+                <th>Correo</th>
+                <th>Parentesco</th>
+            </tr>
+        </tfoot>
+    </table>
   </div>
   <!-- /.container -->
 
@@ -62,6 +173,8 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.dataTables.min.js"></script>
+  <script src="js/llamarDataTable.js"></script>
 
 </body>
 
