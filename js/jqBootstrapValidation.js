@@ -192,17 +192,6 @@
               $this.data("validationValidemailMessage", message);
             }
             // ---------------------------------------------------------
-            //                                                     PHONE
-            if($this.attr("type") != undefined && $this.attr("type").toLowerCase() == "phone"){
-              message = "Número de telefono invalido<!-- data-validator-validaphone-message to override -->";
-              if ($this.data("validationValidaphoneMessage")){
-                message = $this.data("validationValidaphoneMessage");
-              } else if ($this.data("validationValidaphoneMessage")){
-                message = $this.data("validationValidaphoneMessage");
-              }
-              $this.data("validationValidaphoneMessage", message);
-            }
-            // ---------------------------------------------------------
             // ---------------------------------------------------------
             //                                                MINCHECKED
             // ---------------------------------------------------------
@@ -803,13 +792,13 @@
 				name: "Validemail",
 				type: "regex",
 				regex: "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\\.[A-Za-z]{2,4}",
-				message: "Not a valid email address<!-- data-validator-validemail-message to override -->"
+				message: "Correo invalido<!-- data-validator-validemail-message to override -->"
       },
       validaphone: {
         name: "Validaphone",
         type :"regex",
-        regex: "[matches:'[0-9]+',minlength:8,maxlength:8]",
-        message: "Número de telefono invalido<!-- data.validator-validaphone-message to override -->"
+        regex: "[0-9\-\(\)\s]+.",
+        message: "Número de telefono invalido<!-- data-validator-validaphone-message to override -->"
       },
 			passwordagain: {
 				name: "Passwordagain",
